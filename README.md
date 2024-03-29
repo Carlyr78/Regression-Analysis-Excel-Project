@@ -1,17 +1,21 @@
 Correlation Analysis
 Task 1
  
-
 Before delving into predictive modeling with regression analysis, it’s essential to understand the relationships between variables. Correlation analysis is a simple yet effective way to determine if a linear relationship exists between two variables. Please open the Regression Analysis.xlsx file and navigate to the Task 1 sheet.
+
 As part of a broader assignment to perform predictive modeling for The Trendy Shopper, the first task is to explore and understand the relationship between Discount and Total Amount Spent. You must ascertain whether there is a correlation between these two variables and, if so, how strong it is.
+
 Visualize this relationship using a scatter plot to better understand the nature of the relationship.
+
 What is the correlation coefficient between the Discount and Total Amount Spent?
+
 How would you interpret this value?
+
 Based on the scatter plot, how would you describe the relationship between Discount and Total Amount Spent?
-Does the scatter plot suggest a positive, negative, or no correlation, and is the relationship linear or non-linear?
- Use the following hints (if necessary):
+Does the scatter plot suggest a positive, negative, or no correlation, and is the relationship linear or non-linear? Use the following hints (if necessary):
 The first step is calculating the correlation between the Discount and Total Amount Spent. Use Excel’s CORREL() function to do this.
 The next step is to create a scatter plot to better understand the nature of the relationship between the two variables. The following steps create a scatter plot in Excel using the Quick Analysis feature. 
+
 Make sure to select both the Discount and Total Amount Spent columns;
 Once you've selected your data, the tiny Quick Analysis button will automatically appear at the bottom right of your selected data. Click on this button;
 Click on it to open the following menu. Select “Charts”, then “Scatter”. Excel will automatically generate a scatter plot from your selected data;
@@ -20,17 +24,23 @@ Click on it to open the following menu. Select “Charts”, then “Scatter”.
 
 Simple Linear Regression
 Task 2
+
 Please open the Regression Analysis Dataset.xlsx file and navigate to Task 2.
 The next task aims to create a linear regression model to better understand the relationship between the Discount and Total Amount Spent.
 This analysis is necessary because it allows us to quantify the impact of discounts on the total amount spent. If there’s a significant relationship between these two variables, we can use this information to make informed decisions about discount strategies to maximize sales.
+
 What are the independent and dependent variables in this analysis?
 What is the equation of the regression line?
 What are the values of the slope and intercept, and what do they represent in this context?
 How well does the regression model fit the data?
+
 Use the following hints (if necessary):
+
 First, let’s determine the independent and dependent variables. A linear regression analysis uses the dependent variable (the response or outcome variable) to predict or explain.
 At the same time, the independent variable (the predictor or explanatory variable) is used to predict or explain the dependent variable. In this case, you're trying to predict the Total Amount Spent based on the Discount given.
+
 To perform linear regression in Excel, you can use the Data Analysis ToolPak:
+
 1. Enable the Data Analysis ToolPak. If it's not already enabled, you can do so by clicking File > Options > Add-Ins. In the Manage box, select Excel Add-ins and click Go. In the Add-Ins box, check the Analysis ToolPak and click OK.
 2. Prepare your data. Ensure your data is in two columns: one for your independent variable (Discount) and another for the dependent variable (Total Amount Spent). Each row should correspond to a single observation.
 3. Start the regression analysis. Go to the Data tab on the Ribbon, and select Data Analysis in the Analysis group. If you have the Data Analysis ToolPak enabled, this should be available.
@@ -43,7 +53,9 @@ The output will include various statistics, including the coefficients for your 
 Multiple Linear Regression
 Task 3
 Your next task is to refine the linear regression model by incorporating "Product Price" as an explanatory variable. Please open the Regression Analysis Dataset.xlsx file and navigate to the Task 3 sheet.
+
 Using the dataset provided, perform the following steps:
+
 1. Data Cleaning:
 Check for missing values in Product Price, Discount, and Total Amount Spent. Handle these missing values appropriately, as they can distort the regression analysis results and lead to inaccurate conclusions.
 2. Skewness Analysis:
@@ -61,7 +73,9 @@ Interpret the results of your analysis, focusing on:
 The R-squared value of your model and its implications regarding the fit.
 The coefficients of Product Price and Discount.
 The significance of Product Price and Discount in predicting Total Amount Spent.
+
 Questions for interpretation:
+
 Based on the skewness values, do any variables appear to have distributions that deviate from normality?
 Would a log transformation of any variable improve the linearity of the relationship?
 How does the R-squared value change (if at all) after transformation? Why?
@@ -88,8 +102,10 @@ This formula checks cell E5 and returns the following:
 3. To check the entire column, click on the bottom-right corner of cell E5 (where the formula is) and drag it down to copy it to the whole column.
 You can now quickly identify cells that contain numbers, are blank, have errors, or contain non-number values. If you want to delete rows, uncheck the boxes for Number so that only Blank, Non-Number, and Error are selected, and click OK. This will filter your data only to show the rows where the column is Blank, Error, or Non-Number. Select the visible (filtered) rows. You can do this by clicking on the row number for the first visible row, holding down the Shift key, and then clicking on the row number for the last visible row.
 With the rows still selected, right-click on one of the selected rows and choose Delete Row from the context menu. Excel will delete all the visible (filtered) rows. To remove the filter and show all rows again, return to the Data tab and click the Filter button again.
+
 Skewness Analysis:
 Compute Skewness:
+
 Using Excel, compute the skewness values for Product Price, Discount, and Total Amount Spent.
 Enter your dataset into an Excel spreadsheet column.
 Use the SKEW function to calculate skewness. For instance, if your data for Product Price is in cells A1 through A100, type =SKEW(A1:A100) in a blank cell.
